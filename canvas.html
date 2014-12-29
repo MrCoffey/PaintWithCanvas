@@ -3,21 +3,25 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Canvas Thing</title>
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/normalizer.css">
 	<link rel="stylesheet" href="css/paintstyle.css">
 </head>
 <body>
-	<div id="toolbar">
-		<div id="rad">
-			Anchura <span id="radval">10</span>
-			<div id="incrad" class="radcontrol">+</div>
-			<div id="decrad" class="radcontrol">-</div>
+	<header>
+		<div id="toolbar">
+			<div id="rad">
+				Anchura <span id="radval">10</span>
+				<div id="incrad" class="radcontrol">+</div>
+				<div id="decrad" class="radcontrol">-</div>
+			</div>
+		</div><!--Control anchura-->
+		<div id="colors">
+		</div><!--Selector de colores, insertados dinamicamente por colorselector.js linea:11-->
+		<div id="save">
+			Guardar
 		</div>
-	</div><!--Control anchura-->
-	<div id="colors">
-	</div><!--Selector de colores, insertados dinamicamente por colorselector.js linea:11-->
-	<div id="save">
-		Guardar
-	</div>
+	</header>
 	<canvas id='canvas'>
 		No sive
 	</canvas>
