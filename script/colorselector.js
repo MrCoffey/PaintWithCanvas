@@ -1,5 +1,5 @@
 // Agregar swatches nuevos
-var colors = ['green', 'red', 'blue', 'black', 'grey', 'white', 'orange', 'yellow', 'violet'];
+var colors = ['black', 'grey', 'white', 'green', 'red', 'blue', 'orange', 'yellow', 'violet'];
 
 
 // Seleccionar color por clase
@@ -35,3 +35,6 @@ function setSwatch(e){
 	//activar la clase
 	swatch.className += ' active'; 
 }
+
+// Asigna la clase active al primer elemento del array colors
+setSwatch({target: document.getElementsByClassName('swatch')[0]});
